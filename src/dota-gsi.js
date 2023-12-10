@@ -40,16 +40,15 @@ const getHeroInfo = () => {
 let dataJSON;
 function getDataJSON(){
     clients.filter((client) => {
+        dataJSON = client.gamestate
         console.log("dsadas");
-        fs.writeFile("./customer.json", JSON.stringify(client.gamestate), err => {
-            if (err) console.log("Error writing file:", err);
-          });
-        //fs.writeFile('dataJSON', dataJSON);
-        //console.log(dataJSON);
-        console.log(JSON.stringify(client.gamestate));
+        // fs.writeFile("./customer.json", dataJSON, err => {
+        //     if (err) console.log("Error writing file:", err);
+        // });
+        return dataJSON.buildings;
     });
     
-    return `${dataJSON}`;
+    return dataJSON.buildings;
 }
 
 //console.log(getDataJSON());

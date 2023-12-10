@@ -1,28 +1,12 @@
 {
   "buildings": {
     "radiant": {
-      "dota_goodguys_tower1_top": {
-        "health": 824,
-        "max_health": 1800
-      },
-      "dota_goodguys_tower2_top": {
-        "health": 2500,
-        "max_health": 2500
-      },
-      "dota_goodguys_tower3_top": {
-        "health": 2500,
-        "max_health": 2500
-      },
-      "dota_goodguys_tower2_mid": {
-        "health": 2456,
-        "max_health": 2500
-      },
-      "dota_goodguys_tower3_mid": {
-        "health": 2500,
-        "max_health": 2500
-      },
-      "dota_goodguys_tower1_bot": { "health": 459, "max_health": 1800 },
-      "dota_goodguys_tower2_bot": { "health": 2500, "max_health": 2500 },
+      "dota_goodguys_tower1_top": { "health": 249, "max_health": 1800 },
+      "dota_goodguys_tower2_top": { "health": 2500, "max_health": 2500 },
+      "dota_goodguys_tower3_top": { "health": 2500, "max_health": 2500 },
+      "dota_goodguys_tower2_mid": { "health": 1820, "max_health": 2500 },
+      "dota_goodguys_tower3_mid": { "health": 2500, "max_health": 2500 },
+      "dota_goodguys_tower2_bot": { "health": 1188, "max_health": 2500 },
       "dota_goodguys_tower3_bot": { "health": 2500, "max_health": 2500 },
       "dota_goodguys_tower4_top": { "health": 2600, "max_health": 2600 },
       "dota_goodguys_tower4_bot": { "health": 2600, "max_health": 2600 },
@@ -39,14 +23,14 @@
     "name": "Dota 2",
     "appid": 570,
     "version": 47,
-    "timestamp": 1702176941
+    "timestamp": 1702177663
   },
   "map": {
     "name": "start",
     "matchid": "7481015025",
-    "game_time": 1525,
-    "clock_time": 1422,
-    "daytime": true,
+    "game_time": 2247,
+    "clock_time": 2144,
+    "daytime": false,
     "nightstalker_night": false,
     "radiant_score": 0,
     "dire_score": 0,
@@ -72,14 +56,14 @@
     "team_name": "radiant",
     "player_slot": 1,
     "team_slot": 0,
-    "gold": 2970,
-    "gold_reliable": 2190,
-    "gold_unreliable": 780,
+    "gold": 4345,
+    "gold_reliable": 3365,
+    "gold_unreliable": 980,
     "gold_from_hero_kills": 0,
     "gold_from_creep_kills": 0,
-    "gold_from_income": 2190,
+    "gold_from_income": 3365,
     "gold_from_shared": 0,
-    "gpm": 99,
+    "gpm": 104,
     "xpm": 0
   },
   "hero": {
@@ -91,7 +75,7 @@
     "xp": 0,
     "alive": true,
     "respawn_seconds": 0,
-    "buyback_cost": 436,
+    "buyback_cost": 541,
     "buyback_cooldown": 0,
     "health": 582,
     "max_health": 582,
@@ -216,8 +200,8 @@
     "wearable7": 14912
   },
   "previously": {
-    "map": { "game_time": 1523, "clock_time": 1421 },
-    "player": { "gold": 2968, "gold_reliable": 2188, "gold_from_income": 2188 }
+    "map": { "game_time": 2244, "clock_time": 2142 },
+    "player": { "gold": 4341, "gold_reliable": 3361, "gold_from_income": 3361 }
   },
   "auth": { "token": "hello1234" }
 }

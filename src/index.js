@@ -14,33 +14,39 @@ const client = new Client({
         IntentsBitField.Flags.MessageContent
     ]
 })
-// client.on('messageCreate', (msg1) => {
-//     try{
-//         if (msg1.content == 'idk') {
-//             msg1.reply(`${isGameEnded()}`)
-//         }
-//     }
-//     catch(e){
-//         console.log(new Error('gg'));
-//     }
-// })
 
 client.on('ready', (clnt) => {
     console.log(`\n${clnt.user.tag} is online.`) 
 });
 
 client.on('messageCreate', (msg) => {
-    if (msg.content === 'Check' || msg.content === 'check') {
-        getDataJSON();
-        //console.log(getDataJSON);
-        //console.log('wth');
-        //msg.reply(`${getHeroInfo()}`);
-        //msg.reply(`${getDataJSON()}`);
-        //console.log(getDataJSON());
-        //getDataJSON()
-        //msg.reply(getDataJSON());
+    if (msg.author.username !== `Bot-poroshenko`){
+        console.log(msg.author.username);
+        if (msg.channelId === '980494289371033640'){
+            msg.channel.send('hi');
+        }
     }
+
+    msg.content == 'idk' ? msg.reply(`${isGameEnded()}`) : false;
+
 })
+
+
+
+
+
+// client.on('messageCreate', (msg) => {
+//     if (msg.content === 'Check' || msg.content === 'check') {
+//         msg.reply(getDataJSON());
+//         //console.log(getDataJSON);
+//         //console.log('wth');
+//         //msg.reply(`${getHeroInfo()}`);
+//         //msg.reply(`${getDataJSON()}`);
+//         //console.log(getDataJSON());
+//         //getDataJSON()
+//         //msg.reply(getDataJSON());
+//     }
+// })
 
 
 
