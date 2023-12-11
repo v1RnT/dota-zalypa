@@ -37,18 +37,12 @@ const getHeroInfo = () => {
         return `result.join('\n');` // Convert the array to a string with line breaks
     }
 };
-let dataJSON;
+
 function getDataJSON(){
-    clients.filter((client) => {
-        dataJSON = client.gamestate
-        console.log("dsadas");
-        // fs.writeFile("./customer.json", dataJSON, err => {
-        //     if (err) console.log("Error writing file:", err);
-        // });
-        return dataJSON.buildings;
-    });
+    return JSON.stringify(clients.map((client) => {
+        return client.gamestate.buildings;
+    }));
     
-    return dataJSON.buildings;
 }
 
 //console.log(getDataJSON());

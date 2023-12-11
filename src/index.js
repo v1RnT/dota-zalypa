@@ -3,7 +3,6 @@ const fs = require('fs');
 const dota_gsi = require('./dota-gsi');
 const { getHeroInfo, isGameEnded, getDataJSON } = require('./dota-gsi.js');
 
-
 const {Client, IntentsBitField} = require('discord.js');
 
 const client = new Client({
@@ -21,9 +20,12 @@ client.on('ready', (clnt) => {
 
 client.on('messageCreate', (msg) => {
     if (msg.author.username !== `Bot-poroshenko`){
-        console.log(msg.author.username);
         if (msg.channelId === '980494289371033640'){
             msg.channel.send('hi');
+        }
+
+        if(msg.channelId === '980494289371033640' && msg.content == 's'){
+            msg.channel.send(getDataJSON());
         }
     }
 
